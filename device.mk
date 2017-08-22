@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     qcom.fmradio
 
+# Pocket Mode
+PRODUCT_PACKAGES += \
+    MotoPocketMode
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
