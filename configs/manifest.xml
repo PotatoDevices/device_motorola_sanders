@@ -478,7 +478,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>IQtiOemHook</name>
             <instance>oemhook0</instance>
