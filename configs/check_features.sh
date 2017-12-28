@@ -22,6 +22,9 @@ if ! [ "$sku" = "XT1802" ]; then
     rm /system/etc/permissions/mot_dtv_permissions.xml
     rm /system/lib/libdtvhal.so
     rm /system/lib/libdtvtuner.so
+    rm /system/lib64/libdtvtuner.so
+    rm /system/vendor/lib/libdtvhal.so
+    rm /system/vendor/lib64/libdtvhal.so
     rm -r /system/priv-app/DTVPlayer
     rm -r /system/priv-app/DTVService
 fi
