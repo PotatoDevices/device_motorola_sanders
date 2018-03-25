@@ -70,8 +70,8 @@ void vendor_load_properties()
         return;
 
     // fingerprint
-    property_override("ro.build.description", "potter-7.0/NPNS25.137-33-11/11:user/release-keys");
-    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"); // safetynet hax
+    property_override("ro.build.description", "sanders-user 7.1.1 NPSS26.116-61-2 7 release-keys");
+    property_override("ro.build.fingerprint", "motorola/sanders/sanders:7.1.1/NPSS26.116-61-2/7:user/release-keys"); // safetynet hax
 
     std::string sku = GetProperty("ro.boot.hardware.sku", "");
     property_set("ro.product.model", sku.c_str());
