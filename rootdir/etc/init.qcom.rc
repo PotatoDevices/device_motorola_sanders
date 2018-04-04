@@ -45,6 +45,8 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    # Start HW service manager early
+    start hwservicemanager
     mount_all /vendor/etc/fstab.qcom --early
     write /proc/sys/vm/swappiness 100
 
@@ -59,7 +61,13 @@ on late-fs
     start servicemanager
     start surfaceflinger
     start bootanim
-    # mount RW partitions which need run fsck
+
+    # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
+    # In such case, init won't responce the property_set from hwservicemanager and then
+    # cause services for bootanim not running.
+    wait_for_prop hwservicemanager.ready true
+
+    # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
 on init
