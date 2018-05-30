@@ -75,6 +75,7 @@ vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.dec.downscalar_height=1088
 media.camera.ts.monotonic=1
 persist.camera.time.monotonic=1
+persist.camera.eis.enable=1
 
 # CNE
 persist.cne.feature=1
