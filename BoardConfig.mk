@@ -205,11 +205,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# Shim
-TARGET_LD_SHIM_LIBS := \
-    /vendor/bin/adspd|libshim_adsp.so \
-    /vendor/lib64/libmdmcutback.so|libqsap_shim.so
-
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 

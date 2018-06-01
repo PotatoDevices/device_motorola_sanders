@@ -67,7 +67,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default \
     libaudio-resampler \
-    libshim_adsp \
     libtinycompress \
     audiod
 
@@ -199,9 +198,7 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     android.hardware.gnss@1.1-impl-qti \
-    android.hardware.gnss@1.1-service-qti \
-    libqsap_sdk \
-    libqsap_shim
+    android.hardware.gnss@1.1-service-qti
 
 # Healthd
 PRODUCT_PACKAGES += \
@@ -358,13 +355,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
-
 # Shims
 PRODUCT_PACKAGES += \
     libqsap_shim
+
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
 
 # Thermal
 PRODUCT_COPY_FILES += \
