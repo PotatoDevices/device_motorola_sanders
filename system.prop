@@ -241,6 +241,7 @@ ro.sys.sdcardfs=false
 
 # Sensors
 ro.hardware.sensors=sanders
+ro.mot.sensors.glance_approach=false
 
 # SensorService
 system_init.startsensorservice=0
