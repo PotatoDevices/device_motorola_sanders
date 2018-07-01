@@ -24,14 +24,7 @@ LOCAL_MODULE := libshim_adsp
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
 
-# Camera
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := GraphicBuffer.cpp
-LOCAL_SHARED_LIBRARIES := libui
-LOCAL_MODULE := libshim_camera
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SHARED_LIBRARY)
-
+# IMS
 include $(CLEAR_VARS)
 LOCAL_SRC_FILES := libqsap_shim.c
 LOCAL_SHARED_LIBRARIES := libqsap_sdk liblog
