@@ -12,7 +12,7 @@
   {
     "repository": "GZR-Kernels/kernel_motorola_msm8953_sanders",
     "target_path": "kernel/motorola/msm8953",
-    "branch": "8.1-ods"
+    "branch": "8.1-moto"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
