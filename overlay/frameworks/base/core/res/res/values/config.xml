@@ -406,4 +406,13 @@
     <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
     <bool name="config_dynamic_bind_ims">true</bool>
 
+    <!-- Whether navigation bar can be disabled (for devices with hardware keys) -->
+    <bool name="config_canDisableNavigationBar">true</bool>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+	<bool name="config_smart_battery_available">true</bool>
+	<dimen name="config_dialogCornerRadius">8.0dip</dimen>
+	<dimen name="config_buttonCornerRadius">4.0dip</dimen>
 </resources>
