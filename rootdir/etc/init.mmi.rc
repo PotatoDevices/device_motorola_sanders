@@ -280,8 +280,8 @@ service vendor.mmi-boot-sh /system/vendor/bin/sh /system/vendor/bin/init.mmi.boo
     oneshot
     disabled
 
-# Sanders uses qcom sensor service
-service vendor.sensors /system/vendor/bin/sensors.qcom
+# Sanders uses qti sensor service
+service vendor.sensors.qti /system/vendor/bin/sensors.qti
     class core
     user root
     group root
