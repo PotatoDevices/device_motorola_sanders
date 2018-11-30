@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "GZOSP-Devices/device_motorola_sanders",
+    "target_path": "device/motorola/sanders",
+    "branch": "9.0"
+  },
+  {
+    "repository": "BigTopKrazies/vendor_motorola_sanders",
+    "target_path": "vendor/motorola/sanders",
+    "branch": "9.0"
+  },
+  {
+    "repository": "GZR-Kernels/kernel_motorola_msm8953_sanders",
+    "target_path": "kernel/motorola/msm8953",
+    "branch": "9.0"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-16.0"
+  }
+]
