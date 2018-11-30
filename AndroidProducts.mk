@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/gzosp_sanders.mk
+	$(LOCAL_DIR)/potato_sanders.mk

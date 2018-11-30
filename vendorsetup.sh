@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo gzosp_sanders-userdebug
+add_lunch_combo potato_sanders-userdebug
