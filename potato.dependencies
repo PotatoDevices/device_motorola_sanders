@@ -5,6 +5,6 @@
   },
   {
     "repository": "PotatoDevices/kernel_motorola_sanders",
-    "target_path": "kernel/motorola/msm8953"
+    "target_path": "kernel/motorola/sanders"
   }
 ]
