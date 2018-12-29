@@ -6,5 +6,10 @@
   {
     "repository": "PotatoDevices/kernel_motorola_sanders",
     "target_path": "kernel/motorola/sanders"
+  },
+  {
+    "repository": "GZOSP/system_qcom",
+    "target_path": "system/qcom",
+    "branch": "9.0"
   }
 ]
