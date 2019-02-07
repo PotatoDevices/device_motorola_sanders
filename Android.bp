@@ -1,4 +1,5 @@
 subdirs = [
     "usb",
     "light",
+    "health",
 ]
