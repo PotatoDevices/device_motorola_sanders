@@ -15,7 +15,7 @@
  */
 #ifndef DEVICE_MOTOROLA_SANDERS_HEALTH_CYCLECOUNTBACKUPRESTORE_H
 #define DEVICE_MOTOROLA_SANDERS_HEALTH_CYCLECOUNTBACKUPRESTORE_H
-include <string>
+#include <string>
 #include <android-base/file.h>
 #include <android-base/strings.h>
 #include <android-base/logging.h>
