@@ -5,7 +5,8 @@
   },
   {
     "repository": "PotatoDevices/kernel_motorola_sanders",
-    "target_path": "kernel/motorola/sanders"
+    "target_path": "kernel/motorola/sanders",
+    "branch": "baked-better"
   },
   {
     "repository": "GZOSP/system_qcom",
