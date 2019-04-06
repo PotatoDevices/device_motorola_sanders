@@ -408,15 +408,10 @@ PRODUCT_PACKAGES += \
     wificond \
     wifilogd \
     wpa_supplicant \
-    wpa_supplicant.conf
-
-PRODUCT_PACKAGES += \
+    wpa_supplicant.conf \
     libcurl \
     libQWiFiSoftApCfg \
-    wificond \
-    wifilogd \
     tcpdump \
-    wcnss_service \
     libwpa_client
 
 # Wifi Symlinks
