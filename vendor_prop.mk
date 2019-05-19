@@ -179,6 +179,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=false \
     mmp.enable.3g2=true
 
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1
+
 # USB debugging at boot
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
