@@ -28,3 +28,10 @@ if ! [ "$sku" = "XT1802" ]; then
     rm -r /vendor/app/DTVService
 fi
 
+if [ "$sku" = "XT1804" ]; then
+    # XT1804 has additional thermal configs
+    mv /vendor/etc/thermal-engine-INDIA.conf /vendor/etc/thermal-engine.conf
+else
+    rm /vendor/etc/thermal-engine-INDIA.conf
+fi
+
