@@ -249,3 +249,5 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
+# QTI Device Target
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
