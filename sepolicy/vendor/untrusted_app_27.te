@@ -1,0 +1,4 @@
+allow untrusted_app_27 adbtcp_prop:file { getattr open };
+allow untrusted_app_27 bg_boot_complete_prop:file { getattr open };
+allow untrusted_app_27 proc_vmstat:file { getattr open };
+

@@ -55,3 +55,7 @@ allow init { domain -lmkd -crash_dump }:process noatsecure;
 allow init hal_perf_hwservice:hwservice_manager find;
 allow init hidl_base_hwservice:hwservice_manager add;
 
+allow init cameraserver:binder call;
+allow init ion_device:chr_file ioctl;
+allow init sysfs_fpc:file { open read write };
+allow init video_device:chr_file ioctl;
