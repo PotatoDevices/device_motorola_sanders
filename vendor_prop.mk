@@ -388,3 +388,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
+
+# Boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=500
