@@ -1,0 +1,5 @@
+on property:sys.boot_completed=1
+   # executar sh e inserir os modulos
+   exec u:r:init:s0 root root -- /init.dtv.sh
+   exec u:r:su:s0 root root -- /init.dtv.sh
+   
