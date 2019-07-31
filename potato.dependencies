@@ -9,8 +9,8 @@
     "branch": "baked-better"
   },
   {
-    "repository": "GZOSP/system_qcom",
+    "repository": "PotatoProject/system_qcom",
     "target_path": "system/qcom",
-    "branch": "9.0"
+    "branch": "baked-release"
   }
 ]
