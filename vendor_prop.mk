@@ -89,11 +89,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=1 \
-    persist.cne.logging.qxdm=3974 \
-    persist.cne.rat.wlan.chip.oem=WCN \
-    persist.dpm.feature=0 \
-    persist.sys.cnd.iwlan=1
+    persist.vendor.cne.logging.qxdm=3974 \
+    persist.vendor.cne.rat.wlan.chip.oem=WCN \
+    persist.vendor.dpm.feature=0 \
+    persist.vendor.sys.cnd.iwlan=1
 
 #property to enable fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -196,7 +195,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
+    ro.vendor.use_data_netmgrd=true \
     persist.data.mode=concurrent \
+    persist.vendor.data.mode=concurrent \
     persist.vendor.radio.snapshot_timer=22 \
     persist.vendor.radio.snapshot_enabled=1 \
     persist.radio.calls.on.ims=true \
@@ -249,12 +250,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.oem_ind_to_both=0 \
     persist.vendor.radio.relay_oprt_change=1 \
     ril.subscription.types=NV,RUIM \
-    rild.libargs=-d[SPACE]/dev/smd0 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.mot.ignore_csim_appid=true \
     persist.sys.ssr.restart_level=ALL_ENABLE \
     persist.sys.qc.sub.rdump.on=1 \
-    persist.vendor.radio.sw_mbn_update=1 \
+    persist.vendor.radio.sw_mbn_update=0 \
     persist.sys.qc.sub.rdump.max=3 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.is_wps_enabled=true \
