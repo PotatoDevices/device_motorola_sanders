@@ -1,5 +1,7 @@
 r_dir_file(rmt_storage fsg_file)
 r_dir_file(rmt_storage, persist_file)
+r_dir_file(rmt_storage, firmware_file)
+r_dir_file(rmt_storage, adsprpcd_file)
 
 allow rmt_storage sysfs_rmt_storage:file rw_file_perms;
 allow rmt_storage sysfs_rmt_storage:dir { search open };
@@ -9,5 +11,6 @@ allow rmt_storage sysfs_uio:lnk_file { read };
 allow rmt_storage debugfs_rmt_storage:dir search;
 allow rmt_storage debugfs_rmt_storage:file w_file_perms;
 
-allow rmt_storage fsg_file:file { open read };
-allow rmt_storage fsg_file:dir search;
+allow rmt_storage { fsg_file firmware_file adsprpcd_file }:file { open read };
+allow rmt_storage { fsg_file firmware_file adsprpcd_file }:dir search;
+allow rmt_storage { fsg_file firmware_file adsprpcd_file }:lnk_file read;
