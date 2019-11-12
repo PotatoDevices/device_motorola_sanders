@@ -377,7 +377,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #DRM
 PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
+    drm.service.enabled=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
