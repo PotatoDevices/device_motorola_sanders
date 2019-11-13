@@ -302,9 +302,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service \
-    power.qcom
+    android.hardware.power@1.1-service-qti
 
 # Powerhint configuration file
 PRODUCT_COPY_FILES += \
