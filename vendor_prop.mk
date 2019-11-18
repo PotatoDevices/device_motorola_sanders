@@ -97,20 +97,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
 
-# core_ctrl
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.core_ctl_max_cpu=4
-
-# Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=192m \
-    dalvik.vm.heapmaxfree=8m \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapsize=384m \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heaptargetutilization=0.75
-
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
