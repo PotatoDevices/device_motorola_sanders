@@ -103,6 +103,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
 
+# Disable rotator split feature
+PRODUCT_PROPERTY_OVERRIDES += \
+    sdm.debug.disable_rotator_split=1
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
