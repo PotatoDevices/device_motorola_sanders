@@ -462,6 +462,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     CarrierConfig
 
+# Charging
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 PRODUCT_BOARD_PLATFORM := msm8996
 
 PRODUCT_USES_QCOM_HARDWARE := true
