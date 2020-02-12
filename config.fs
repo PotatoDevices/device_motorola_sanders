@@ -50,7 +50,7 @@ caps: NET_BIND_SERVICE
 user: AID_SYSTEM
 group: AID_SYSTEM
 mode: 0755
-caps: NET_BIND_SERVICE
+caps: NET_BIND_SERVICE SYS_BOOT
 
 [vendor/bin/cnd]
 mode: 0755
