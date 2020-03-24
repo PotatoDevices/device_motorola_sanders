@@ -135,3 +135,6 @@
 
 # Health hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.0-service\.sanders        u:object_r:hal_health_default_exec:s0
+
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0

@@ -54,3 +54,7 @@ allow init sysfs_fpc:file { open read write };
 allow init ion_device:chr_file { ioctl open read };
 allow init uhid_device:chr_file { ioctl open write };
 allow init fingerprintd_data_file:file { append rename };
+
+allow init vendor_data_file:file lock;
+allow init hal_audio_default:binder call;
+allow init platform_app:binder call;
