@@ -238,6 +238,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.qmi.adb_logmask=0 \
     persist.radio.apn_delay=5000 \
     persist.radio.apm_sim_not_pwdn=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.radio.dfr_mode_set=1 \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.dpm.feature=0 \
