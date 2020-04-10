@@ -481,6 +481,7 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
+PRODUCT_ENFORCE_RRO_TARGETS :=*
 PRODUCT_USE_QCOM_SURFACEFLINGER := true
 PRODUCT_BOARD_PLATFORM := msm8996
 PRODUCT_USES_QCOM_HARDWARE := true
