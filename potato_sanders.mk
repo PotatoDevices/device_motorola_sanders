@@ -28,6 +28,7 @@ $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
+TARGET_BOOTANIM_LOW_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
