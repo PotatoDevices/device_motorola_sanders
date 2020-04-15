@@ -1,2 +1,4 @@
 allow hal_drm_default firmware_file:lnk_file read;
 allow hal_drm_default debug_prop:file read;
+
+domain_auto_trans(init, hal_drm_default_exec, hal_drm_default)

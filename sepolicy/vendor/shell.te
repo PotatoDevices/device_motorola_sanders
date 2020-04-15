@@ -1,0 +1,4 @@
+allow shell firmware_file:dir getattr;
+allow shell kernel:system syslog_read;
+allow shell rootfs:file getattr;
+allow shell unlabeled:dir getattr;

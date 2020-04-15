@@ -1,7 +1,6 @@
 get_prop(hal_gnss_qti, diag_prop);
 allow hal_gnss_qti debug_prop:file read;
 allow hal_gnss_qti property_socket:sock_file write;
-allow hal_gnss_qti sysfs:file { open read };
 
 # Most HALs are not allowed to use network sockets. Qcom library
 # libqdi is used across multiple processes which are clients of
@@ -16,3 +15,5 @@ allow hal_gnss_qti sysfs:file { open read };
 # sockets.
 # Taken from device/google/wahoo
 dontaudit hal_gnss_qti self:udp_socket create;
+
+allow hal_gnss_qti sysfs:file { open read };

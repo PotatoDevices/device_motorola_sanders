@@ -1,2 +1,0 @@
-type wcnss_filter, domain;
-get_prop(wcnss_filter, diag_prop);

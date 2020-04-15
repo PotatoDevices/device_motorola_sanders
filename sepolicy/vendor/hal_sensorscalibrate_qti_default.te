@@ -1,0 +1,1 @@
+allow hal_sensorscalibrate_qti_default sysfs:file { open read };

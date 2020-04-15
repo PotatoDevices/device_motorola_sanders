@@ -1,0 +1,2 @@
+allow wfdservice unlabeled:dir search;
+allow wfdservice unlabeled:file { open read };

@@ -1,8 +1,13 @@
 get_prop(thermal-engine, diag_prop)
 allow thermal-engine socket_device:sock_file { create setattr };
-allow thermal-engine sysfs_rmt_storage:dir search;
-allow thermal-engine sysfs_rmt_storage:file r_file_perms;
 allow thermal-engine sysfs_uio:file r_file_perms;
 allow thermal-engine sysfs_uio:dir { read open search };
 allow thermal-engine sysfs_uio:lnk_file { read };
 allow thermal-engine sysfs_vadc_dev:lnk_file { read open };
+
+allow thermal-engine device:chr_file { ioctl open read write };
+allow thermal-engine sysfs:dir { open read };
+allow thermal-engine sysfs:file { getattr open read write };
+allow thermal-engine sysfs_devfreq:dir { read search };
+allow thermal-engine sysfs_vadc_dev:dir search;
+allow thermal-engine self:capability { dac_override dac_read_search };

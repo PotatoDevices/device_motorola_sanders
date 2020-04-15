@@ -1,5 +1,15 @@
-allow netmgrd toolbox_exec:file { getattr read open };
+allow netmgrd netd_socket:sock_file write;
+
 allow netmgrd init:unix_stream_socket connectto;
 allow netmgrd property_socket:sock_file write;
-allow netmgrd system_file:file { execute lock };
-allow netmgrd default_prop:property_service set;
+
+allow netmgrd init:unix_stream_socket connectto;
+allow netmgrd property_socket:sock_file write;
+
+allow netmgrd dnsresolver_service:service_manager find;
+allow netmgrd netd_service:service_manager find;
+allow netmgrd sysfs:file { open read };
+allow netmgrd system_file:file { execute execute_no_trans getattr lock open read };
+allow netmgrd self:capability sys_resource;
+allow netmgrd binder_device:chr_file { ioctl open read write };
+allow netmgrd servicemanager:binder call;
