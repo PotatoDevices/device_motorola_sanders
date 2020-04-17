@@ -159,7 +159,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.radio.data_lte_sys_ind=1
+    persist.radio.data_lte_sys_ind=1 \
+    persist.vendor.radio.force_on_dc=true \
+    persist.radio.custom_ecc=1 \
+    persist.radio.data_con_rprt=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.ignore_dom_time=10 \
+    persist.radio.ignore_dom_time=10 \
+    persist.radio.rat_on=combine \
+    persist.radio.is_wps_enabled=true \
+    persist.radio.videopause.mode=1 \
+    persist.radio.sap_silent_pin=1 \
+    persist.radio.always_send_plmn=true \
+    persist.rcs.supported=1 \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.data_lte_sys_ind=1\
+    persist.vendor.radio.voice_on_lte=1 \
+    persist.radio.poweron_opt=1 \
+    persist.vendor.radio.calls.on.ims=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -363,3 +384,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m
+
+#DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
