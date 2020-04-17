@@ -34,12 +34,11 @@ PRODUCT_DEVICE := sanders
 PRODUCT_NAME := potato_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
+PRODUCT_MODEL := Moto G (5S) Plus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G (5S) Plus" \
-    PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
+    PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36-14 63857 release-keys"
 
 BUILD_FINGERPRINT := motorola/sanders:8.1.0/OPS28.65-36/9fea:user/release-keys
 VENDOR_BUILD_FINGERPRINT := motorola/sanders:8.1.0/OPS28.65-36/9fea:user/release-keys
