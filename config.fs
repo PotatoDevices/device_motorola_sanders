@@ -28,7 +28,7 @@ user: AID_BLUETOOTH
 group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
-[vendor/bin/cnss-daemon]
+[system/bin/cnss-daemon]
 mode: 0755
 user: AID_BLUETOOTH
 group: AID_BLUETOOTH
