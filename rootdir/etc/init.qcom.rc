@@ -45,6 +45,7 @@ on fs
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
     mount_all /vendor/etc/fstab.qcom --early
+    write /proc/sys/vm/swappiness 100
 
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
@@ -452,6 +453,10 @@ on post-fs-data
 
     #Create IOP  deamon related dirs
     mkdir /data/vendor/iop 0700 root system
+
+    #Create SWAP related dirs
+    mkdir /data/system/swap 0770 root system
+    chmod 2770 /data/system/swap
 
     # Force all SSR systems to 'related' so they attempt
     # self-recovery without rebooting the device
