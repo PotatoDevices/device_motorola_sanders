@@ -1,0 +1,23 @@
+type hal_fingerprint_fpc, domain;
+type hal_fingerprint_fpc_exec, exec_type, file_type;
+init_daemon_domain(hal_fingerprint_fpc)
+
+allow hal_fingerprint_fpc sysfs:dir { open read search };
+allow hal_fingerprint_fpc sysfs:file { open read write };
+allow hal_fingerprint_fpc sysfs_fpc:dir { open read search };  
+allow hal_fingerprint_fpc sysfs_fpc:file { open read write };
+allow hal_fingerprint_fpc tee_device:chr_file { ioctl open read write };
+allow hal_fingerprint_fpc unlabeled:dir { open read search };
+allow hal_fingerprint_fpc unlabeled:file { getattr open read };
+allow hal_fingerprint_fpc ion_device:chr_file r_file_perms;
+allow hal_fingerprint_fpc uhid_device:chr_file { getattr open read ioctl lock write };
+get_prop(hal_fingerprint_fpc, hwservicemanager_prop) 
+allow hal_fingerprint_fpc system_data_file:dir { add_name getattr open read remove_name write };
+allow hal_fingerprint_fpc system_data_file:file { append create open read write setattr unlink };
+allow hal_fingerprint_fpc hwservicemanager:binder { call transfer };
+allow hal_fingerprint_fpc fpc_extension_service:hwservice_manager add;
+allow hal_fingerprint_fpc hal_fingerprint_hwservice:hwservice_manager add;
+allow hal_fingerprint_fpc hidl_base_hwservice:hwservice_manager add;
+allow hal_fingerprint_fpc fingerprintd_data_file:dir { add_name getattr open read remove_name search ioctl lock write };
+allow hal_fingerprint_fpc fingerprintd_data_file:file { getattr open read rename ioctl lock unlink write };
+allow hal_fingerprint_fpc system_server:binder { call transfer };
