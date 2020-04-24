@@ -20,3 +20,4 @@ allow system_server persist_camera_prop:file { getattr open read };
 allow system_server sysfs:file open;
 allow system_server init:binder { call transfer };
 allow system_server hal_fingerprint_fpc:binder { call transfer };
+allow system_server sysfs_livedisplay_tuneable:file { read write };

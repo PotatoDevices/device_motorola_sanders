@@ -14,3 +14,4 @@ allow rild unlabeled:dir { getattr open read search };
 allow rild unlabeled:file { getattr open read };
 allow rild proc:file { open read };
 allow rild unlabeled:lnk_file read;
+allow rild wifi_prop:file { getattr open read };

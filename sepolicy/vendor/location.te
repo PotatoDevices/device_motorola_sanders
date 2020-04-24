@@ -1,2 +1,2 @@
 allow location sysfs:file { open read };
-allow location wifi_prop:file { open read };
+allow location wifi_prop:file { getattr open read };

@@ -1,3 +1,4 @@
+
 # binder_call(wcnss_service, servicemanager);
 set_prop(wcnss_service, wifi_prop);
 get_prop(wcnss_service, diag_prop);
@@ -9,3 +10,4 @@ allowxperm wcnss_service self:udp_socket ioctl priv_sock_ioctls;
 
 allow wcnss_service unlabeled:dir { search };
 allow wcnss_service unlabeled:file { open read };
+allow wcnss_service sysfs:file { getattr open write };
