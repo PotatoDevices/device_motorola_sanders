@@ -598,6 +598,7 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
 service vendor.rmt_storage /vendor/bin/rmt_storage
     class core
     user root
+    group wakelock
     ioprio rt 0
     shutdown critical
     writepid /dev/cpuset/system-background/tasks

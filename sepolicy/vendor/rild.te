@@ -8,10 +8,13 @@ allow rild fsg_file:lnk_file read;
 allow rild rild_exec:file execute_no_trans;
 
 allow rild fwk_sensor_hwservice:hwservice_manager find;
-allow rild cutback_data_file:dir { add_name open read remove_name search write };
 allow rild cutback_data_file:sock_file { create setattr unlink write };
 allow rild unlabeled:dir { getattr open read search };
 allow rild unlabeled:file { getattr open read };
 allow rild proc:file { open read };
 allow rild unlabeled:lnk_file read;
 allow rild wifi_prop:file { getattr open read };
+
+typeattribute rild data_between_core_and_vendor_violators;
+
+allow rild cutback_data_file:dir { add_name open read remove_name search write };

@@ -61,5 +61,5 @@ type sysfs_screen_off_gestures, fs_type, sysfs_type, mlstrustedobject;
 # Themes
 type theme_data_file, file_type, data_file_type;
 
-#WCNSS
+# WCNSS
 type wcnss_data_file, file_type, data_file_type;

@@ -4,7 +4,9 @@ allow platform_app rootfs:dir getattr;
 
 allow platform_app init:unix_stream_socket { connectto read write };
 allow platform_app hal_sensors_default:unix_stream_socket { read write };
-allow platform_app vendor_file:file { execute getattr open read };
 allow platform_app isdbt_device:chr_file { read write };
-allow platform_app time_daemon:unix_stream_socket connectto;
 allow platform_app adb_data_file:dir search;
+
+typeattribute platform_app system_executes_vendor_violators;
+
+allow platform_app vendor_file:file { execute getattr open read };

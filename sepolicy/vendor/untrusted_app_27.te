@@ -1,7 +1,4 @@
-allow untrusted_app_27 hal_memtrack_hwservice:hwservice_manager find;
 allow untrusted_app_27 persist_camera_prop:file { getattr open read };
-allow untrusted_app_27 proc:file { getattr open read };
+allow untrusted_app_27 proc:file getattr;
 allow untrusted_app_27 proc_qtaguid_stat:file { getattr open read };
 allow untrusted_app_27 proc_zoneinfo:file { getattr open read };
-allow untrusted_app_27 proc_tty_drivers:file read;
-allow untrusted_app_27 serialno_prop:file read;

@@ -6,10 +6,14 @@ allow netmgrd property_socket:sock_file write;
 allow netmgrd init:unix_stream_socket connectto;
 allow netmgrd property_socket:sock_file write;
 
-allow netmgrd dnsresolver_service:service_manager find;
-allow netmgrd netd_service:service_manager find;
 allow netmgrd sysfs:file { open read };
-allow netmgrd system_file:file { execute execute_no_trans getattr lock open read };
 allow netmgrd self:capability sys_resource;
-allow netmgrd binder_device:chr_file { ioctl open read write };
 allow netmgrd servicemanager:binder call;
+
+typeattribute netmgrd binder_in_vendor_violators;
+
+allow netmgrd binder_device:chr_file { ioctl open read write };
+
+typeattribute netmgrd vendor_executes_system_violators;
+
+allow netmgrd system_file:file { execute execute_no_trans getattr lock open read };
