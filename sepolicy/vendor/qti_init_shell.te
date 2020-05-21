@@ -8,3 +8,4 @@ allow qti_init_shell kmsg_device:chr_file open;
 
 allow qti_init_shell vendor_file:system module_load;
 allow qti_init_shell fm_prop:property_service set;
+allow qti_init_shell persist_file:dir { getattr search };

@@ -1,1 +1,2 @@
 allow sensors sysfs:file { open read };
+allow sensors persist_file:dir { getattr search };

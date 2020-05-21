@@ -1,3 +1,4 @@
 typeattribute hal_graphics_composer_default vendor_executes_system_violators;
 
 allow hal_graphics_composer_default system_file:file { execute getattr open read };
+allow hal_graphics_composer_default persist_file:dir search;

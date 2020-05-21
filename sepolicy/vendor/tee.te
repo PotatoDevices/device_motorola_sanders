@@ -8,3 +8,4 @@ typeattribute tee data_between_core_and_vendor_violators;
 
 allow tee fingerprintd_data_file:dir { add_name open read search write };
 allow tee fingerprintd_data_file:file { create open read write };
+allow tee persist_file:dir search;

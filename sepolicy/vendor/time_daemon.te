@@ -4,3 +4,4 @@ allow time_daemon persist_file:file { open read write };
 
 allow time_daemon self:capability { setgid setuid };
 allow time_daemon sysfs:file { open read };
+allow time_daemon persist_file:dir search;
