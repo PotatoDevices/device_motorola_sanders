@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.0-service \
+    hdmi_cec.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libgenlock \
@@ -151,8 +152,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor \
-    vendor.display.config@1.0
+    libgpu_tonemapper
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
