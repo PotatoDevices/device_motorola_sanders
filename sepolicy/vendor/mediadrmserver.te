@@ -1,1 +1,3 @@
 allow mediadrmserver firmware_file:dir search;
+
+binder_call(mediadrmserver, hal_drm_default);
