@@ -8,3 +8,4 @@ com.fingerprints.extension::IFingerprintSensorTest                              
 com.quicinc.cne.api::IApiService                                                  u:object_r:hal_cne_hwservice:s0
 com.quicinc.cne.server::IServer                                                   u:object_r:hal_cne_hwservice:s0
 vendor.dolby.hardware.dms::IDms                                                   u:object_r:hal_dms_hwservice:s0
+motorola.hardware.tv::IDTVHW                                                      u:object_r:hal_dtv_hwservice:s0

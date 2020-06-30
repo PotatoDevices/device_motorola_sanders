@@ -1,0 +1,14 @@
+# DTV service
+type hal_dtv_default, domain;
+type hal_dtv_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hal_dtv_default)
+get_prop(hal_dtv_default, hwservicemanager_prop)
+
+allow hal_dtv_default platform_app:binder call;
+allow hal_dtv_default hwservicemanager:binder { call transfer };
+allow hal_dtv_default vendor_data_file:file { rw_file_perms create };
+allow hal_dtv_default vendor_data_file:dir { rw_file_perms add_name };
+
+add_hwservice(hal_dtv_default, hal_dtv_hwservice)
+allow hal_dtv_default hal_dtv_hwservice:hwservice_manager find; 
