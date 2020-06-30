@@ -12,3 +12,4 @@ typeattribute platform_app system_executes_vendor_violators;
 allow platform_app vendor_file:file { execute getattr open read };
 
 allow platform_app exported_camera_prop:file { getattr open read };
+allow platform_app hal_dtv_hwservice:hwservice_manager find;
