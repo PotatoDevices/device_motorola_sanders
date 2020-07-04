@@ -40,6 +40,10 @@ on early-init
     chown root system /dev/kmsg
     chmod 0620 /dev/kmsg
 
+# We need vold early for metadata encryption
+on early-fs
+    start vold
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -66,6 +70,9 @@ on late-fs
     # In such case, init won't responce the property_set from hwservicemanager and then
     # cause services for bootanim not running.
     wait_for_prop hwservicemanager.ready true
+
+    # Wait for keymaster
+    exec_start wait_for_keymaster
 
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
