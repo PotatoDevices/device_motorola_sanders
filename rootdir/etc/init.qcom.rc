@@ -967,7 +967,14 @@ on property:sys.boot_completed=1
     write /sys/module/process_reclaim/parameters/swap_opt_eff 30
     write /sys/module/process_reclaim/parameters/pressure_min 50
     write /sys/module/process_reclaim/parameters/per_swap_size 512
-    write /sys/module/lowmemorykiller/parameters/minfree "15360,19200,23040,26880,34415,43737"
+
+    # Enable adaptive LMK for all targets &
+    # use Google default LMK series for all 64-bit targets >=2GB.
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+
+    # Set Adaptive LMK Values according to Google minfree defaults
+    write /sys/module/lowmemorykiller/parameters/adj_max_shift 606
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 105984
 
     #Reset the "read ahead" setting for system patition
     # result: ext4: 32KB, dm_verity:64KB, block layer: 128KB
