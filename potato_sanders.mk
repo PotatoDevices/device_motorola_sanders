@@ -41,8 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G (5S) Plus" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36-14 63857 release-keys"
 
-BUILD_FINGERPRINT := motorola/sanders:8.1.0/OPS28.65-36/9fea:user/release-keys
-VENDOR_BUILD_FINGERPRINT := motorola/sanders:8.1.0/OPS28.65-36/9fea:user/release-keys
-
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
+
+BUILD_FINGERPRINT := motorola/payton/payton:8.0.0/OPWS27.57-25-6-10/12:user/release-keys
