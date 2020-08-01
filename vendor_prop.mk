@@ -394,3 +394,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Boot
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.vendor.shutdown.waittime=500
+
+# Enable QC2 bufferqueue block-pool
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.qc2.use.bqpool=1
