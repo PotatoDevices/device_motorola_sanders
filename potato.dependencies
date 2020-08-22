@@ -2,16 +2,11 @@
   {
     "repository": "PotatoDevices/vendor_motorola_sanders",
     "target_path": "vendor/motorola/sanders",
-    "branch": "baked-release"
+    "branch": "croquette-release"
   },
   {
     "repository": "PotatoDevices/kernel_motorola_sanders",
     "target_path": "kernel/motorola/sanders",
-    "branch": "baked-release"
-  },
-  {
-    "repository": "PotatoProject/system_qcom",
-    "target_path": "system/qcom",
-    "branch": "baked-release"
+    "branch": "croquette-release"
   }
 ]
