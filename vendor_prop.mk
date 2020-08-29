@@ -191,13 +191,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
 
-# USB debugging at boot
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    ro.debuggable=1
-
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
