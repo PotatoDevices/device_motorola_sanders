@@ -175,8 +175,8 @@ MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
 # FM
-BOARD_HAVE_QCOM_FM := true
-BOARD_DISABLE_FMRADIO_LIBJNI := true
+#BOARD_HAVE_QCOM_FM := true
+#BOARD_DISABLE_FMRADIO_LIBJNI := true
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -226,8 +226,8 @@ LZMA_RAMDISK_TARGETS := recovery
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
