@@ -18,4 +18,3 @@ allow system_server adb_data_file:file { getattr open read };
 allow system_server adb_data_file:dir { getattr open read search };
 allow system_server persist_camera_prop:file { getattr open read };
 allow system_server hal_fingerprint_fpc:binder { call transfer };
-allow system_server sysfs_livedisplay_tuneable:file { read write };

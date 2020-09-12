@@ -1,5 +1,3 @@
 allow qseeproxy servicemanager:binder { call transfer };
 
-typeattribute qseeproxy binder_in_vendor_violators;
-
 allow qseeproxy binder_device:chr_file { ioctl open read write };

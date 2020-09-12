@@ -1,5 +1,3 @@
-typeattribute vendor_init data_between_core_and_vendor_violators;
-
 allow vendor_init adspd_data_file:dir { create setattr };
 allow vendor_init camera_data_file:dir { create setattr };
 allow vendor_init cutback_data_file:dir { create setattr };

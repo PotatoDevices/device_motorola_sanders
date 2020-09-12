@@ -10,10 +10,6 @@ allow netmgrd sysfs:file { open read };
 allow netmgrd self:capability sys_resource;
 allow netmgrd servicemanager:binder call;
 
-typeattribute netmgrd binder_in_vendor_violators;
-
 allow netmgrd binder_device:chr_file { ioctl open read write };
-
-typeattribute netmgrd vendor_executes_system_violators;
 
 allow netmgrd system_file:file { execute execute_no_trans getattr lock open read };

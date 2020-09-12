@@ -15,6 +15,4 @@ allow rild proc:file { open read };
 allow rild unlabeled:lnk_file read;
 allow rild wifi_prop:file { getattr open read };
 
-typeattribute rild data_between_core_and_vendor_violators;
-
 allow rild cutback_data_file:dir { add_name open read remove_name search write };

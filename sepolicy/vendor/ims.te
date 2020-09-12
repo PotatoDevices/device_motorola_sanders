@@ -5,6 +5,4 @@ allow ims diag_device:chr_file { read write };
 
 allow ims sysfs:file { open read };
 
-typeattribute ims vendor_executes_system_violators;
-
 allow ims system_file:file { execute getattr open read };

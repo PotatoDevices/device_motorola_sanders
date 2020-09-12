@@ -30,6 +30,4 @@ allow mm-qcamerad unlabeled:file { open read };
 allow mm-qcamerad vendor_data_file:dir read;
 allow mm-qcamerad mnt_vendor_file:file { getattr open read };
 
-typeattribute mm-qcamerad binder_in_vendor_violators;
-
 allow mm-qcamerad binder_device:chr_file { ioctl open read write };
