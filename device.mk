@@ -396,6 +396,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libcutils_shim \
     libqsap_shim \
     libgpu_mapper_shim
 
