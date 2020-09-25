@@ -88,6 +88,10 @@ KERNEL_TOOLCHAIN_PATH := $(TOP)/prebuilts/clang/host/linux-x86/clang-r353983c1/b
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+#Vndk
+BOARD_VNDK_VERSION := current
+BOARD_VNDK_RUNTIME_DISABLE := true
+
 # Audio
 BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 BOARD_USES_ALSA_AUDIO := true
