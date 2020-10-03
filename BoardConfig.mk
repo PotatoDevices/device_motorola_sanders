@@ -159,9 +159,8 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
 
-# Encryption
+# Crypto
 TARGET_HW_DISK_ENCRYPTION := true
-BOARD_USES_METADATA_PARTITION := true
 
 # Enable dexpreopt to speed boot time
 WITH_DEXPREOPT := true
