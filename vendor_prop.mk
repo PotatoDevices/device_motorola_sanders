@@ -85,10 +85,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.camera2=true \
     persist.camera.is_type=3 \
     persist.camera.max.previewfps=60 \
+    persist.dualcam.lpm.enable=0 \
     vidc.enc.dcvs.extra-buff-count=2 \
     vidc.dec.disable.split.cpu=1 \
     video.disable.ubwc=1 \
-    vendor.camera.aux.packagelist=com.motorola.camera2,com.google.android.Pixel2Mod
+    vendor.camera.aux.packagelist=com.motorola.camera2,com.google.android.Pixel2Mod,com.android.camera
 
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
