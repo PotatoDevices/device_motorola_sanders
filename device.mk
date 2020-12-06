@@ -178,6 +178,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni \
+    init.qti.fm.sh
 
 # Pocket Mode
 PRODUCT_PACKAGES += \
@@ -350,7 +355,6 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.ril.sh \
-    init.qcom.fm.sh \
     wlan_carrier_bin.sh
 
 PRODUCT_PACKAGES += \
