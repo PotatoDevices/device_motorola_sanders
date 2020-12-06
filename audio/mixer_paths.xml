@@ -485,6 +485,10 @@
 		<path name="fm-virtual-record" />
 	</path>
 
+        <path name="multi-channel-playback afe-proxy">
+                <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
+        </path>
+
 	<path name="voice-call">
 		<ctl name="PRI_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
 		<ctl name="VoiceMMode1_Tx Mixer TERT_MI2S_TX_MMode1" value="1" />
