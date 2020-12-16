@@ -1,7 +1,9 @@
-Device Tree for Moto G5S Plus (sanders)
+<a href="https://drive.google.com/uc?export=view&id=1Rax2xdnBECQx72T_tcbyX1xHCtS54rRk"><img src="https://drive.google.com/uc?export=view&id=1Rax2xdnBECQx72T_tcbyX1xHCtS54rRk" title="Click to enlarge picture" />
+
+Device Tree for Moto G5s Plus (sanders)
 ===========================================
 
-The Motorola Moto G5S Plus (codenamed _"sanders"_) is a mid-range smartphone from Motorola mobility.
+The Motorola Moto G5s Plus (codenamed _"sanders"_) is a mid-range smartphone from Motorola mobility.
 It was announced on August 2017.
 
 Basic   | Spec Sheet
@@ -18,5 +20,3 @@ Display | 1080 x 1920 pixels, 5.2 inches (~402 ppi pixel density)
 Camera  | Dual 13 MP, f/2.0, autofocus, dual-LED (dual tone) flash, 2150 x 1440 pixels
 
 Copyright 2017 - The LineageOS Project.
-
-![Moto G5S Plus](http://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g5s-plus-1.jpg "Moto G5 Plus")
