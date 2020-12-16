@@ -2,11 +2,11 @@
   {
     "repository": "PotatoDevices/vendor_motorola_sanders",
     "target_path": "vendor/motorola/sanders",
-    "branch": "croquette-release"
+    "branch": "dumaloo-release"
   },
   {
     "repository": "PotatoDevices/kernel_motorola_sanders",
     "target_path": "kernel/motorola/sanders",
-    "branch": "croquette-release"
+    "branch": "dumaloo-release"
   }
 ]
