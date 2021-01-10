@@ -9,5 +9,3 @@ allow cnd wifi_prop:file { getattr open read };
 typeattribute cnd vendor_executes_system_violators;
 
 allow cnd system_file:file { execute getattr open read };
-
-allow cnd default_android_hwservice:hwservice_manager find;

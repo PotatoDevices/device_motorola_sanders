@@ -1,1 +1,3 @@
+typeattribute adbd system_executes_vendor_violators;
+
 allow adbd vendor_file:file { getattr read };

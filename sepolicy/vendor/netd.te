@@ -1,3 +1,5 @@
 allow netd untrusted_app_25:unix_stream_socket { read write };
 
+typeattribute netd system_executes_vendor_violators;
+
 allow netd vendor_file:file { getattr read };

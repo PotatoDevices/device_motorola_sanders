@@ -53,6 +53,4 @@ allow init ion_device:chr_file { ioctl open read };
 allow init uhid_device:chr_file { ioctl open write };
 allow init fingerprintd_data_file:file { append rename };
 
-allow init system_file:file execute_no_trans;
 allow init persist_file:dir mounton;
-allow init sysfs:dir create;
