@@ -1,3 +1,5 @@
 # allow fsck block_device:blk_file { read write };
 allow fsck modem_efs_partition_device:blk_file { read write };
 allow fsck tmpfs:blk_file getattr;
+
+allow fsck vendor_file:file { getattr read };

@@ -3,3 +3,5 @@ allow installd fsg_file:filesystem quotaget;
 allow installd persist_file:filesystem quotaget;
 allow installd adb_data_file:dir search;
 allow installd adb_data_file:file { getattr open read };
+
+allow installd vendor_file:file { getattr read };

@@ -1,2 +1,2 @@
-allow nfc nfc_vendor_data_file:dir { search write };
-allow nfc nfc_vendor_data_file:file { open read write };
+allow nfc nfc_vendor_data_file:dir { add_name search write };
+allow nfc nfc_vendor_data_file:file { create open read write };

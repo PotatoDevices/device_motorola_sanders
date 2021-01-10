@@ -1,3 +1,5 @@
 allow shell firmware_file:dir getattr;
 allow shell rootfs:file getattr;
 allow shell unlabeled:dir getattr;
+
+allow shell vendor_file:file { getattr read };

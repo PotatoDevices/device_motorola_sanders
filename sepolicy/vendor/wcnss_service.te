@@ -11,3 +11,5 @@ allowxperm wcnss_service self:udp_socket ioctl priv_sock_ioctls;
 allow wcnss_service unlabeled:dir { search };
 allow wcnss_service unlabeled:file { open read };
 allow wcnss_service sysfs:file { getattr open write };
+
+allow wcnss_service vendor_default_prop:property_service set;

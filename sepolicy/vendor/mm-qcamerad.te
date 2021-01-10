@@ -30,4 +30,10 @@ allow mm-qcamerad unlabeled:file { open read };
 allow mm-qcamerad vendor_data_file:dir read;
 allow mm-qcamerad mnt_vendor_file:file { getattr open read };
 
+typeattribute mm-qcamerad binder_in_vendor_violators;
+
 allow mm-qcamerad binder_device:chr_file { ioctl open read write };
+
+allow mm-qcamerad default_prop:property_service set;
+allow mm-qcamerad camera_data_file:dir search;
+allow mm-qcamerad persist_camera_file:dir { add_name search write };

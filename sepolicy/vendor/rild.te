@@ -15,4 +15,11 @@ allow rild proc:file { open read };
 allow rild unlabeled:lnk_file read;
 allow rild wifi_prop:file { getattr open read };
 
+typeattribute rild data_between_core_and_vendor_violators;
+
 allow rild cutback_data_file:dir { add_name open read remove_name search write };
+
+allow rild persist_modem_file:dir search;
+allow rild persist_modem_file:file { open read write };
+allow rild vendor_default_prop:property_service set;
+allow rild mnt_vendor_file:dir search;

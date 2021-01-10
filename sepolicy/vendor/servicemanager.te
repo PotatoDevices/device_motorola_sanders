@@ -9,7 +9,7 @@ allow servicemanager hal_fingerprint_default:dir search;
 allow servicemanager hal_fingerprint_default:file read;
 
 allow servicemanager hal_camera_default:dir search;
-allow servicemanager hal_camera_default:file r_file_perms;
+allow servicemanager hal_camera_default:file { open read };
 allow servicemanager hal_camera_default:process getattr;
 
 allow servicemanager hal_fingerprint_default:file open;
@@ -45,3 +45,6 @@ allow servicemanager netmgrd:dir search;
 allow servicemanager netmgrd:file { open read };
 allow servicemanager netmgrd:process getattr;
 allow servicemanager qseeproxy:process getattr;
+
+allow servicemanager init:binder transfer;
+allow servicemanager vendor_file:file { getattr read };

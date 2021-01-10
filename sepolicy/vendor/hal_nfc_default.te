@@ -1,4 +1,8 @@
 #allow hal_nfc_default default_android_hwservice:hwservice_manager { add find };
 allow hal_nfc_default nxpese_hwservice:hwservice_manager { add find };
 allow hal_nfc_default nxpnfc_hwservice:hwservice_manager add;
-allow hal_nfc_default nfc_vendor_data_file:dir { search write };
+allow hal_nfc_default nfc_vendor_data_file:dir { add_name search write };
+
+allow hal_nfc_default nfc_vendor_data_file:file create;
+
+allow hal_nfc_default nxpnfc_hwservice:hwservice_manager find;
