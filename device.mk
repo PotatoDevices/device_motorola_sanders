@@ -337,8 +337,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock
+    android.hardware.power-service-qti
 
 # Powerhint configuration file
 PRODUCT_COPY_FILES += \
