@@ -255,8 +255,10 @@
             <name>ISensors</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::ISensors/default</fqname>
-        <fqname>@1.0::ISensorManager/default</fqname>
+        <interface>
+            <name>ISensorManager</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.thermal</name>
