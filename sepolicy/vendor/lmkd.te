@@ -1,1 +1,3 @@
+typeattribute lmkd system_executes_vendor_violators;
+
 allow lmkd vendor_file:file { getattr read };

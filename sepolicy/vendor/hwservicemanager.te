@@ -10,4 +10,6 @@ binder_call(hwservicemanager, hal_usb_default);
 
 hwbinder_use(hal_fingerprint_fpc)
 
+typeattribute hwservicemanager system_executes_vendor_violators;
+
 allow hwservicemanager vendor_file:file { getattr read };

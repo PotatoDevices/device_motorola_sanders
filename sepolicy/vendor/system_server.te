@@ -23,5 +23,8 @@ allow system_server userspace_reboot_config_prop:file { getattr open read };
 
 allow system_server userspace_reboot_exported_prop:file { getattr open read };
 
-allow system_server vendor_file:file { getattr read };
 allow system_server exported_camera_prop:file { getattr open read };
+
+typeattribute radio system_executes_vendor_violators;
+
+allow system_server vendor_file:file { getattr read };

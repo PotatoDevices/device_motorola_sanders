@@ -1,1 +1,3 @@
+typeattribute recovery_persist system_executes_vendor_violators;
+
 allow recovery_persist vendor_file:file { getattr read };

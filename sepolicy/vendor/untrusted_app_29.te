@@ -1,1 +1,3 @@
+typeattribute untrusted_app_29 system_executes_vendor_violators;
+
 allow untrusted_app_29 vendor_file:file { open read getattr };

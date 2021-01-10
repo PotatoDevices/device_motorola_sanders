@@ -1,1 +1,3 @@
+typeattribute tombstoned system_executes_vendor_violators;
+
 allow tombstoned vendor_file:file { getattr read };

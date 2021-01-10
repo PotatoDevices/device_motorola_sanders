@@ -1,1 +1,3 @@
+typeattribute mediaswcodec system_executes_vendor_violators;
+
 allow mediaswcodec vendor_file:file { getattr read };

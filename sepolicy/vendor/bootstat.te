@@ -1,1 +1,3 @@
+typeattribute bootstat system_executes_vendor_violators;
+
 allow bootstat vendor_file:file { getattr read };

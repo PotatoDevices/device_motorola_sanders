@@ -4,4 +4,6 @@ allow installd persist_file:filesystem quotaget;
 allow installd adb_data_file:dir search;
 allow installd adb_data_file:file { getattr open read };
 
+typeattribute installd system_executes_vendor_violators;
+
 allow installd vendor_file:file { getattr read };

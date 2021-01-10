@@ -1,1 +1,3 @@
+typeattribute sdcardd system_executes_vendor_violators;
+
 allow sdcardd vendor_file:file { getattr read };

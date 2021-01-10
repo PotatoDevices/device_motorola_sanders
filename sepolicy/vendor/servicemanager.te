@@ -47,4 +47,7 @@ allow servicemanager netmgrd:process getattr;
 allow servicemanager qseeproxy:process getattr;
 
 allow servicemanager init:binder transfer;
+
+typeattribute servicemanager system_executes_vendor_violators;
+
 allow servicemanager vendor_file:file { getattr read };

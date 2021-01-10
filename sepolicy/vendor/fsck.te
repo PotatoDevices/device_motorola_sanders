@@ -2,4 +2,6 @@
 allow fsck modem_efs_partition_device:blk_file { read write };
 allow fsck tmpfs:blk_file getattr;
 
+typeattribute fsck system_executes_vendor_violators;
+
 allow fsck vendor_file:file { getattr read };

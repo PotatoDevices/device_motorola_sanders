@@ -7,4 +7,7 @@ allow bootanim hwservicemanager:binder call;
 dontaudit bootanim system_data_file:dir read;
 
 allow bootanim userspace_reboot_exported_prop:file { getattr open read };
+
+typeattribute bootanim system_executes_vendor_violators;
+
 allow bootanim vendor_file:file { getattr read };

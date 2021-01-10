@@ -1,1 +1,3 @@
+typeattribute statsd system_executes_vendor_violators;
+
 allow statsd vendor_file:file { getattr read };

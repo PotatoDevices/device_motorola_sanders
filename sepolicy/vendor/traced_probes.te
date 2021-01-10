@@ -1,1 +1,3 @@
+typeattribute traced_probes system_executes_vendor_violators;
+
 allow traced_probes vendor_file:file { getattr read };

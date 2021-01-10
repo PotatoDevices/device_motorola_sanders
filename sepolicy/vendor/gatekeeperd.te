@@ -1,1 +1,3 @@
+typeattribute gatekeeperd system_executes_vendor_violators;
+
 allow gatekeeperd vendor_file:file { getattr read };

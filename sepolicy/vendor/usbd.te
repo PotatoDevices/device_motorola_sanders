@@ -1,1 +1,3 @@
+typeattribute usbd system_executes_vendor_violators;
+
 allow usbd vendor_file:file { getattr read };

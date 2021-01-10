@@ -1,1 +1,3 @@
+typeattribute logd system_executes_vendor_violators;
+
 allow logd vendor_file:file { getattr read };

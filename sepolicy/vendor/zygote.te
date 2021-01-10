@@ -3,4 +3,7 @@ allow zygote self:capability sys_nice;
 allow zygote proc_cmdline:file { getattr open read };
 
 allow zygote exported_camera_prop:file { getattr open read };
+
+typeattribute zygote system_executes_vendor_violators;
+
 allow zygote vendor_file:file { getattr read };

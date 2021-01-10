@@ -1,1 +1,3 @@
+typeattribute mediaserver system_executes_vendor_violators;
+
 allow mediaserver vendor_file:file { getattr read };

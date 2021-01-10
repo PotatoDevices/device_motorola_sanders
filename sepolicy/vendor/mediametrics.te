@@ -1,1 +1,3 @@
+typeattribute mediametrics system_executes_vendor_violators;
+
 allow mediametrics vendor_file:file { getattr read };

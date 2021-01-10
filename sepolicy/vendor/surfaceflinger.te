@@ -4,4 +4,6 @@ allow surfaceflinger diag_device:chr_file { read write };
 
 binder_call(surfaceflinger, hwservicemanager)
 
+typeattribute surfaceflinger system_executes_vendor_violators;
+
 allow surfaceflinger vendor_file:file { getattr read };

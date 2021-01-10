@@ -1,1 +1,3 @@
+typeattribute apexd system_executes_vendor_violators;
+
 allow apexd vendor_file:file { getattr read };
