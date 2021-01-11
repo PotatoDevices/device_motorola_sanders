@@ -181,8 +181,7 @@ PRODUCT_PACKAGES += \
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio \
-    libfmjni \
-    init.qti.fm.sh
+    libfmjni
 
 # Pocket Mode
 PRODUCT_PACKAGES += \
