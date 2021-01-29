@@ -28,4 +28,3 @@ allow system_server exported_camera_prop:file { getattr open read };
 typeattribute system_server system_executes_vendor_violators;
 
 allow system_server vendor_file:file { getattr read };
-allow system_app fm_radio_device:chr_file r_file_perms;
