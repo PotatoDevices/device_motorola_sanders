@@ -190,6 +190,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.poweron_opt=1 \
     persist.vendor.radio.calls.on.ims=1
 
+# IORAPD - Enable readahead for app starts
+PRODUCT_PROPERTY_OVERRIDES += \
+    iorapd.readahead.enable=true
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
