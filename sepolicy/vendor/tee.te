@@ -3,6 +3,7 @@ allow tee persist_file:file r_file_perms;
 set_prop(tee, tee_listener_prop)
 
 allow tee system_data_file:dir { open read };
+allow tee system_data_root_file:dir { open read };
 
 typeattribute tee data_between_core_and_vendor_violators;
 
