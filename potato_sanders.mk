@@ -44,4 +44,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
-BUILD_FINGERPRINT := google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys
+BUILD_FINGERPRINT := google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys
