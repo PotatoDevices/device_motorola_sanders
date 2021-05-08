@@ -8,3 +8,6 @@ type qti_telephony_prop, property_type;
 type wcnss_prop, property_type;
 type tee_listener_prop, property_type;
 type persist_camera_prop, property_type;
+type fm_prop, property_type;
+type qcom_ims_prop, property_type;
+type cnd_vendor_prop, property_type;
