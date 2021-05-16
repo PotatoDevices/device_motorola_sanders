@@ -6,4 +6,4 @@ typeattribute radio system_executes_vendor_violators;
 allow radio vendor_file:file { execute getattr open read };
 
 allow radio hal_datafactory_hwservice:hwservice_manager find;
-allow radio qcom_ims_prop:file { getattr open read };
+allow radio vendor_qcom_ims_prop:file { getattr open read };
